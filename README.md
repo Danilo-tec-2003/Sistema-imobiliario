@@ -11,26 +11,6 @@ Projeto desenvolvido em Java com Spring Boot para gerenciar imóveis, clientes e
 - PostgreSQL
 - Lombok
 
-- ## 📁 Estrutura do Projeto
-├── src/
-│ └── main/
-│ ├── java/
-│ │ └── com/
-│ │ └── exemplo/
-│ │ └── sistemaimobiliario/
-│ │ ├── controller/
-│ │ ├── model/
-│ │ ├── repository/
-│ │ └── service/
-│ └── resources/
-│ ├── application.properties
-│ └── static/
-├── .gitignore
-├── mvnw
-├── mvnw.cmd
-├── pom.xml
-└── README.md
-
 # ⚙️ Configuração do Banco de Dados
 
 O projeto utiliza **MySQL** como banco de dados. Certifique-se de que o MySQL esteja instalado e em execução.
