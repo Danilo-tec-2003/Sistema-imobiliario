@@ -1,27 +1,28 @@
 # 🏡 Sistema Imobiliário
 
-Projeto desenvolvido em Java com Spring Boot para gerenciar imóveis, clientes e transações imobiliárias. Este sistema permite o cadastro, consulta e gerenciamento de propriedades e clientes, facilitando a administração de uma imobiliária.
+Projeto desenvolvido em Java com Spring Boot para gerenciar imóveis, clientes e transações imobiliárias.  
+Este sistema permite o cadastro, consulta e gerenciamento de propriedades e clientes, facilitando a administração de uma imobiliária.
 
 ## 🚀 Tecnologias Utilizadas
 
-- Java 23
-- Spring Boot 3.x
-- Spring Data JPA
-- Maven
-- PostgreSQL
+- Java 23  
+- Spring Boot 3.x  
+- Spring Data JPA  
+- Maven  
+- MYSQL 
 - Lombok
 
-# ⚙️ Configuração do Banco de Dados
+## ⚙️ Configuração do Banco de Dados
 
-O projeto utiliza **MySQL** como banco de dados. Certifique-se de que o MySQL esteja instalado e em execução.
+O projeto utiliza MySQL como banco de dados. Certifique-se de que o MySQL esteja instalado e em execução.
 
 ### 📌 Criar Banco de Dados
 
-1. Acesse o MySQL:
-   ```bash
-   mysql -u root -p
+Acesse o MySQL:
 
+mysql -u root -p
 Execute o comando:
+
 CREATE DATABASE real_estate_system;
 USE real_estate_system;
 
@@ -31,8 +32,9 @@ O projeto está configurado com as seguintes propriedades:
 properties
 spring.application.name=real_estate_system
 
-spring.datasource.url=jdbc:mysql://localhost:3307/real_estate_system (atente-se em qual porta o seu MYSQL está configurada, pode ser outra como: 3306)
-spring.datasource.username= 'seu usuario' 
+spring.datasource.url=jdbc:mysql://localhost:3307/real_estate_system
+# (atente-se em qual porta o seu MYSQL está configurada, pode ser outra como: 3306)
+spring.datasource.username= 'seu usuario'
 spring.datasource.password= 'sua senha'
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
@@ -47,7 +49,8 @@ springdoc.swagger-ui.path=/swagger-ui.html
 🧪 Como Executar o Projeto Localmente
 
 ✅ Pré-requisitos
-Java 17
+
+Java 23
 Maven
 MySQL 8+
 IDE (IntelliJ, VSCode, Eclipse etc.)
@@ -60,11 +63,10 @@ cd Sistema-imobiliario
 Configure o banco como mostrado acima.
 
 Compile o projeto:
-
 ./mvnw clean install
-Execute o projeto:
 
+Execute o projeto:
 ./mvnw spring-boot:run
+
 Acesse no navegador:
 http://localhost:8080
-
